@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Movie" ALTER COLUMN "runTime" SET DATA TYPE VARCHAR(255);

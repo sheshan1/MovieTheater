@@ -1,0 +1,10 @@
+type Mutation {
+    AddMovie(
+        title: String!
+        rating: Float!
+        releasedDate: DateTime!
+        showsUntil: DateTime!
+        runTime: String!
+        actors: [ActorInput!]!
+    )
+}

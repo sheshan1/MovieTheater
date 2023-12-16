@@ -1,0 +1,2 @@
+-- AlterTable
+ALTER TABLE "Shedule" ALTER COLUMN "time" SET DATA TYPE VARCHAR(255);

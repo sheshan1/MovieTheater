@@ -1,0 +1,39 @@
+type Movie {
+    id: Int!
+    title: String!
+    rating: Float!
+    releasedDate: DateTime!
+    showsUntil: DateTime!
+    runTime: String!
+    actors: [Actor!]!
+    schedules: [Schedule!]!
+}
+
+type Actor {
+    id: Int!
+    firstName: String!
+    lastName: String!
+    movies: [MovieActors!]!
+}
+
+type MovieActors {
+    movieId: Int!
+    movie: Movie!
+    actorId: Int!
+    actor: Actor!
+}
+
+type Schedule {
+    id: Int!
+    date: DateTime!
+    time: String!
+    hall: Hall!
+    movie: Movie!
+    movieId: Int!
+}
+
+enum Hall {
+    ONE
+    TWO
+    THREE
+}
